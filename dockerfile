@@ -8,7 +8,7 @@ RUN a2enmod rewrite
 COPY src /var/www/
 RUN chown -R www-data:www-data /var/www
 
-RUN apt-get update
-RUN apt-get install nodejs
+# RUN apt-get update
+# RUN apt-get install nodejs
 
 CMD ["start-apache"]
